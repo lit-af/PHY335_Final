@@ -1,0 +1,106 @@
+\documentclass[letterpaper,10pt]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[x11names]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{circuits.ee.IEC}
+\usepackage[os=win]{menukeys}
+
+\usepackage{amsmath,amssymb,textcomp}
+\everymath{\displaystyle}
+
+\usepackage{physics}
+
+\usepackage{times}
+\renewcommand\familydefault{\sfdefault}
+\usepackage{tgheros}
+\usepackage{droidmono}
+
+\usepackage{enumitem}
+\usepackage[explicit]{titlesec}
+
+\usepackage{multicol}
+\setlength{\columnseprule}{0pt}
+\setlength{\columnsep}{15.0pt}
+\usepackage{multirow}
+\usepackage[mode=buildnew]{standalone}
+\usepackage{siunitx}
+
+\usepackage{geometry}
+\geometry{left=10mm,right=10mm,top=10mm,bottom=15mm,showframe=false}
+
+% custom title
+\makeatletter
+\renewcommand*{\maketitle}{%
+\noindent
+\begin{minipage}{0.82\textwidth}
+\begin{tikzpicture}
+\node[rectangle,rounded corners=6pt,inner sep=6pt,fill=SteelBlue1,text width=.95\textwidth] {\color{black}\huge \@title};
+\end{tikzpicture}
+\end{minipage}
+\hfill
+\begin{minipage}{0.17\textwidth}
+\begin{tikzpicture}
+\node[rectangle,rounded corners=3pt,inner sep=10pt,draw=SteelBlue1,text width= 0.78\textwidth] {\raggedleft \Large \@author\ \@date};
+\end{tikzpicture}
+\end{minipage}
+%\bigskip%\bigskip
+}%
+\makeatother
+
+% custom section
+\newcommand*\sectionlabel{}
+\titleformat{\section}
+  {\gdef\sectionlabel{}
+   \normalfont\sffamily\Large\bfseries\scshape}
+  {\gdef\sectionlabel{\thesection\ }}{0pt}
+  {
+\noindent
+\begin{tikzpicture}
+\node[rectangle,rounded corners=3pt,inner sep=4pt,fill=DodgerBlue4,text width= 0.95\columnwidth] {\color{white}\sectionlabel#1};
+\end{tikzpicture}
+  }
+\titlespacing*{\section}{0pt}{1pt}{0.5pt}
+
+% custom subsection
+\newcommand*\subsectionlabel{}
+\titleformat{\subsection}{\normalfont\sffamily\bfseries\scshape}{\subsectionlabel}{0pt}{
+\noindent
+\begin{tikzpicture}
+\node[rectangle,rounded corners=4pt,inner sep=3pt,fill=DodgerBlue3,text width= 0.95\columnwidth] {\color{white}\subsectionlabel#1};
+\end{tikzpicture}
+}
+\titlespacing*{\subsection}{0pt}{.5pt}{.5pt}
+
+% custom subsubsection
+\newcommand*\subsubsectionlabel{}
+\titleformat{\subsubsection}{\normalfont\sffamily\small\bfseries\scshape}{\subsubsectionlabel}{0pt}{
+\noindent
+\begin{tikzpicture}
+\node[rectangle,rounded corners=3pt,inner sep=3pt,fill=blue!50!yellow,text width= 0.95\columnwidth] {\color{white}\subsubsectionlabel#1};
+\end{tikzpicture}
+}
+\titlespacing*{\subsubsection}{0pt}{.5pt}{.5pt}
+
+
+\title{PHY335 : Physique des ondes}
+\author{Final}
+\date{E2019}
+
+%\linespread{1.3}
+
+\begin{document}
+\maketitle
+
+\begin{multicols*}{2}
+
+\setlength{\belowdisplayskip}{2.5pt}
+\setlength{\belowdisplayshortskip}{2.5pt}
+\setlength{\abovedisplayskip}{2.5pt}
+\setlength{\abovedisplayshortskip}{2.5pt}
+\input{content}
+
+\end{multicols*}
+
+\end{document}

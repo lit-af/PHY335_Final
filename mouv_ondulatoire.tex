@@ -1,0 +1,110 @@
+\section{Mouvement Ondulatoire}
+\vspace{-2\baselineskip}
+\subsection{Onde sinusoïdale}
+
+\begin{tabular}{lll}
+Valeur & Formule & Unitée \\\hline
+Longueur d'onde & \(\lambda = cT = c/f\) & m \\%[5pt]
+Vitesse de propagation & \(c=\sqrt{F/\mu} \) & m/s \\%\hline\rule{0pt}{15pt}\hspace{-6pt} 
+Const. de propagation & \(k = \omega/c = 2\pi/\lambda\)& m$^{-1}$\\
+Densité lin. & \(\mu = F/c^2\) & kg/m\\
+Vitesse max. & \( v_{\textit{max}}=\omega A\) & m/s\\%[5pt]\hline\rule{0pt}{15pt}
+\end{tabular}%
+% }
+
+
+\subsection{Équations du mouvement}
+\begin{align*}
+    y(x,t) &= A\sin (\omega t \pm kx+\phi)\\
+    v(x,t) &=\omega A\cos (\omega t \pm kx+\phi)\\
+    a(x,t) &= -\omega^2 A\sin (\omega t \pm kx+\phi)
+\end{align*}
+\subsubsection{Sens de propagation}
+\begin{center}
+    \begin{tabular}{cl}
+        $-$ & vers la droite ($x>0$)\\
+        $+$ & vers la gauche ($x<0$)
+    \end{tabular}
+\end{center}
+
+% \subsection{Impédance}
+% \begin{gather*}
+%     Z=\frac{Fk}{\omega} =\frac{F}{c} =\mu c =\sqrt{\mu F}
+% \end{gather*}
+
+% \subsection{Puissance}
+% \begin{align*}
+%     W_{\textit{inst}} &= Z(\omega A)^2\cos^2(\omega t \pm kx +\phi)\\
+%     W_{\textit{moy}} &= \frac{Z(\omega A)^2}{2}
+% \end{align*}
+
+
+% \subsection{Interférence dans le plan}
+% \begin{center}
+%     \includestandalone[scale=1.25]{fig/interference}
+% \end{center}
+% \[y(P,t)=A_R \cos (\omega t +\phi_R)\]
+% \[A_R^2=A_1^2+A_2^2+2A_1 A_2\cos (\psi_2-\psi_1) \]
+% \[(\psi_2-\psi_1)=-k(x_2-x_1)+(\phi_2-\phi1)\]
+
+% % \subsubsection{Interférence constructive \hfill$\cos(\psi_2 - \psi_1)>0$}
+% % \begin{equation*}
+% %     (x_2-x_1)=m\lambda + \frac{\phi_2-\phi_1}{k}
+% % \end{equation*}
+
+% % \subsubsection{Interférence destructive \hfill $\cos(\psi_2 - \psi_1)<0$}
+% % \begin{equation*}
+% %     (x_2-x_1)=(2m+1)\frac{\lambda}{2}+\frac{\phi_2-\phi_1}{k}
+% % \end{equation*}
+
+
+% \begin{tabular}{lll}
+%     Type & $\cos(\psi_2 - \psi_1)$ & Équation\\\hline
+%     Cons. & $>0$ & \((x_2-x_1)=m\lambda + \frac{\phi_2-\phi_1}{k}\)\\
+%     Dest. & $<0$ & \((x_2-x_1)=(2m+1)\frac{\lambda}{2}+\frac{\phi_2-\phi_1}{k}\)
+% \end{tabular}
+
+
+
+% \subsection{Réflexion et transmission}
+% % \subsubsection{Équations}
+% \begin{center}
+%     \includestandalone[scale=1]{fig/reflex_trans}
+% \end{center}
+% \begin{tabular}{ll|l}
+%     & Milieu 1 & Milieu 2\\\hline
+%     incidente & \(y_i=A_i\sin (\omega t - k_1 x)\) &  \multirow{2}{*}{\(y_t=A_t \sin (\omega t-k_2 x) \)} \\
+%     réfléchie &\(y_r=A_r\sin (\omega t + k_1 x)\) & \\\hline
+%     & \(y_1=y_i+y_r\) & \(y_2=y_t\)
+% \end{tabular}
+
+% \subsubsection{Coefficients}
+% \begin{tabular}{c|c}
+%     Amplitude & Puissance\\\hline
+%     \(r=\frac{Z_1-Z_2}{Z_1+Z_2}\) &  \(R=\frac{W_r}{W_i}=\qty(\frac{A_r}{A_i})^2=r^2=\qty(\frac{Z_1-Z_2}{Z_1+Z_2})^2\)\\\rule{-2.5pt}{20pt}
+%     \(t=\frac{2Z_1}{Z_1+Z_2}\) & \(T=\frac{W_t}{W_i}=\qty(\frac{A_t}{A_i})^2=\frac{Z_2}{Z_1}t^2=\frac{4Z_1 Z_2}{(Z_1+Z_2)^2}\)
+% \end{tabular}
+% \begin{tabular}{lll}
+%     Caractérisation & Indicateur & Cas extrème\\\hline
+%     Réflexion dure & \(Z_2>Z_1\) & \(Z_2=0\)\\
+%     Réflexion molle & \(Z_2<Z_1\) & \(Z_2=\alpha\)
+% \end{tabular}
+
+% \subsection{Ondes stationnaires}
+% % \subsubsection{Équations}
+% \begin{align*}
+%     y_r &= A\sin (\omega t +kx)\\ 
+%     y_i &= -A\sin (\omega t - kx)\\
+%     y(x,t)&=2A\sin (kx) \cos (\omega t)
+% \end{align*}
+
+% \subsubsection{Noeuds et Ventres}
+% \begin{tabular}{l|ll}
+%     Noeuds & \(x=\frac{n\lambda}{2}\) & \multirow{2}{*}{\(\mid n = 0,1,2,3,\ldots\)}\\
+%     Ventres &  \(x=(2n+1)\frac{\lambda}{4}\) &
+% \end{tabular}
+% \subsubsection{Combinaison d'ondes stationnaires}
+% \begin{tabular}{ll}
+%     Fondamantale & \(\lambda_n = \frac{2L}{n}\) \\\rule{-2.5pt}{15pt}
+%     Harmoniques & \(f_n=\frac{nc}{2L}\)
+% \end{tabular}

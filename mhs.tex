@@ -1,0 +1,42 @@
+\section{Mouvement harmonique simple}
+\vspace{-2\baselineskip}
+\begin{center}
+    \includestandalone[scale=1.25]{fig/mhs_graph}
+\end{center}
+
+% \subsection{Superposition de MHS}
+% \subsubsection{Même fréquence et même direction}
+% \centering
+% \begin{tabular}{l|l}
+%     Objectif &  \(x_R(t)=\sum x_i(t)\)\\\hline
+%      & \(a_R=\sum A_i\cos(\phi_i)\)\\
+%      & \(b_R=\sum A_i\sin(\phi_i)\)\\
+%      & \(A_R=\sqrt{a_R^2+b_R^2}\)\\
+%      & \(\phi_R=\tan^{-1}\frac{b_R}{a_R}\)\\[8pt]\hline
+%     Résultat & \(x_R(t)=A_R\cos(\omega t + \phi_R)\) 
+% \end{tabular}
+
+% \raggedright
+% \subsubsection{Même fréquence et directions perpendiculaires}
+% Solution:
+% \begin{equation*}
+%     \qty(\frac{x}{A_x})^2+\qty(\frac{y}{A_y})^2-\frac{2xy}{A_x A_y}\cos(\phi_y-\phi_x)=\sin^2(\phi_y-\phi_x)
+% \end{equation*}
+% Inclinaison:
+% \begin{equation*}
+%     \tan(2\alpha)=\frac{2A_x A_y}{A_x^2-A_y^2}\cos(\phi_y-\phi_x)
+% \end{equation*}
+
+% \subsubsection{Même fréquence et direction quelconques}
+% \begin{center}
+%     \includestandalone[scale=1]{fig/mhs_rand_dir}
+% \end{center}
+% \begin{enumerate}[nosep]
+%     \item Décomposer le MHS selon X et Y.
+%     \item Additionner les composantes de MHS selon X et Y.
+%     \item Combiner les résultantes perpendiculaires.
+% \end{enumerate}
+
+% \subsubsection{Fréquences différentes et directions perpendiculaires}
+% Dépend de: \( \frac{A_x}{A_y}\), \(\frac{\omega_x}{\omega_y}\) et \(\Delta\phi=\phi_y-\phi_x\)\\
+% Résolution par analyse de Fourier.
