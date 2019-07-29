@@ -1,0 +1,44 @@
+\section{Polarisation}
+\vspace{-2\baselineskip}
+\begin{center}
+    \includestandalone[scale=1.125]{fig/elec_field}
+\end{center}
+\vspace{-\baselineskip}
+\subsection{Énergie}
+\[W_{\dag}=I_{\dag}A_{\dag}=I_{\dag}A\cos{\theta_{\dag}} \;|\, \dag=\qty{i,r,t}\]
+\subsubsection{Conservation de l'énergie}
+\addtolength{\tabcolsep}{-3pt}    
+\begin{tabular}{cccc}
+    \(E_o^2=E_{o\parallel}^2+E_{o\bot}^2\) & \(I=I_{\parallel}+I_{\bot}\) & \(R_\ast+T_\ast=1\) & \(W_r+W_t=W_i\) \\
+\end{tabular}
+\addtolength{\tabcolsep}{3pt}    
+
+\subsection{Coefficients en puissance}
+\begin{center}
+    \begin{tabular}{ll}
+    \(R_\ast=\frac{I_{r\ast}}{I_{i\ast}}=\frac{E_{or}^2}{E_{oi}^2}=r_{\ast}^2\) & \(T_\ast=\frac{I_{t\ast}\cos{\theta_t}}{I_{i\ast}\cos{\theta_i}}=\frac{n_t\cos{\theta_t}}{n_i\cos{\theta_i}}t^2\)
+    \end{tabular}    
+\end{center}
+
+\subsection{Loi de Malus}
+\begin{tabular}{lll}
+    \multirow{2}{*}{Ray. polarisé} & Champ éle. & \(E=E_o\cos{\theta}\) \\
+    & Intensité & \(I_{\ast}=\frac{E_{\ast}^2}{2\mu_o c}=I_o\cos^2{\theta}\)\\\hline\\[-1em]
+    Ray. naturel & Intensité &\(I=I_n\cos^2{\theta}=\frac{I_n}{2}\)
+\end{tabular}
+
+\subsection{Coefficients réflexion et transmission}
+\begin{align*}
+    r_{\bot} &= \frac{n_i\cos{\theta_i}-n_t\cos{\theta_t}}{n_i\cos{\theta_i}+n_t\cos{\theta_t}} = \frac{E_{or\bot}}{E_{oi\bot}}\\
+    t_{\bot} &= \frac{2n_i\cos{\theta_i}}{n_i\cos{\theta_i}+n_t\cos{\theta_t}} = \frac{E_{ot\bot}}{E_{oi\bot}}\\
+    r_{\parallel} &= \frac{n_t\cos{\theta_i}-n_i\cos{\theta_t}}{n_t\cos{\theta_i}+n_i\cos{\theta_t}} = \frac{E_{or\parallel}}{E_{oi\parallel}}\\
+    t_{\parallel} &= \frac{2n_i\cos{\theta_i}}{n_t\cos{\theta_i}+n_i\cos{\theta_t}} = \frac{E_{ot\parallel}}{E_{oi\parallel}}
+\end{align*}
+
+\subsection{Degré de polarisation}
+\begin{tabular}{lll}
+    Deg. pol. & \(V=\frac{I_{\mathrm{max}}-I_{\mathrm{min}}}{I_{\mathrm{max}}+I_{\mathrm{min}}}=\frac{I_p}{I_p+I_n}\) & \\[8pt]
+    I max. & \( I_{\mathrm{max}}=I_p+\frac{I_n}{2}\)  & t.q. $I_p$ polarisé\\
+    I min. & \( I_{\mathrm{min}}=\frac{I_n}{2}\)  & t.q. $I_n$ naturelle
+\end{tabular}
+

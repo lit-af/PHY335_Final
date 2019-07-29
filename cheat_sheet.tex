@@ -24,7 +24,8 @@
 \setlength{\columnseprule}{0pt}
 \setlength{\columnsep}{15.0pt}
 \usepackage{multirow}
-\usepackage[mode=buildnew]{standalone}
+% \usepackage[mode=buildnew]{standalone}
+\usepackage{standalone}
 \usepackage{siunitx}
 
 \usepackage{geometry}
@@ -34,20 +35,19 @@
 \makeatletter
 \renewcommand*{\maketitle}{%
 \noindent
-\begin{minipage}{0.82\textwidth}
+\begin{minipage}{0.75\textwidth}
 \begin{tikzpicture}
 \node[rectangle,rounded corners=6pt,inner sep=6pt,fill=SteelBlue1,text width=.95\textwidth] {\color{black}\huge \@title};
 \end{tikzpicture}
 \end{minipage}
 \hfill
-\begin{minipage}{0.17\textwidth}
+\begin{minipage}{0.24\textwidth}
 \begin{tikzpicture}
-\node[rectangle,rounded corners=3pt,inner sep=10pt,draw=SteelBlue1,text width= 0.78\textwidth] {\raggedleft \Large \@author\ \@date};
+\node[rectangle,rounded corners=3pt,inner sep=10pt,draw=SteelBlue1,text width= 0.78\textwidth] {\raggedleft \Large \@author\ \textemdash\ \@date};
 \end{tikzpicture}
 \end{minipage}
-%\bigskip%\bigskip
 }%
-\makeatother
+% \makeatother
 
 % custom section
 \newcommand*\sectionlabel{}
@@ -61,7 +61,7 @@
 \node[rectangle,rounded corners=3pt,inner sep=4pt,fill=DodgerBlue4,text width= 0.95\columnwidth] {\color{white}\sectionlabel#1};
 \end{tikzpicture}
   }
-\titlespacing*{\section}{0pt}{1pt}{0.5pt}
+\titlespacing*{\section}{0pt}{0.5pt}{0.5pt}
 
 % custom subsection
 \newcommand*\subsectionlabel{}
